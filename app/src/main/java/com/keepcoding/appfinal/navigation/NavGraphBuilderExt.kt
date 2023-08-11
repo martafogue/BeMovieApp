@@ -20,7 +20,6 @@ fun NavGraphBuilder.addInitialScreen(navController: NavController) {
 fun NavGraphBuilder.addMovieListScreen(navController: NavHostController) {
     composable(Screen.MovieListScreen.route) {
         MovieListScreen { movieId ->
-            Log.d("PELICULA NAV", movieId.toString())
             navController.navigate("${Screen.MovieDetailScreen.route}/$movieId")
         }
     }

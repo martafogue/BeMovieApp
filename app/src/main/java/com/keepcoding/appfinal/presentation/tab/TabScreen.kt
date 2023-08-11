@@ -53,12 +53,12 @@ fun TabScreen(
                         when (index) {
                             0 -> Icon(
                                     imageVector = Icons.Default.Home,
-                                    contentDescription = "Colección",
+                                    contentDescription = "HOME",
                                     tint = Color.White
                                 )
                             1 -> Icon(
                                     painterResource(id = R.drawable.icon_person),
-                                    contentDescription = "Mi cuenta",
+                                    contentDescription = "MY ACOUNT",
                                     tint = Color.White
                                 )
                         }

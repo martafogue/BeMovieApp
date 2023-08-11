@@ -1,4 +1,4 @@
-package com.keepcoding.appfinal
+package com.keepcoding.appfinal.di
 
 import android.app.Application
 import com.keepcoding.appfinal.di.dataModule
