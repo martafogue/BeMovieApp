@@ -59,11 +59,14 @@ fun UserScreen() {
     )
 
     Column(
-        modifier = Modifier.verticalScroll(rememberScrollState()),
+        modifier = Modifier
+            .padding(15.dp, 0.dp, 15.dp, 0.dp)
+            .verticalScroll(rememberScrollState()
+            ),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        
-        Spacer(modifier = Modifier.size(40.dp))
+
+        Spacer(modifier = Modifier.size(20.dp))
 
         Image(
             modifier = Modifier
@@ -71,7 +74,7 @@ fun UserScreen() {
             painter = painterResource(id = R.drawable.user),
             contentDescription = ""
         )
-        Spacer(modifier = Modifier.size(30.dp))
+        Spacer(modifier = Modifier.size(35.dp))
 
         Card(
             modifier = Modifier
@@ -102,8 +105,8 @@ fun UserScreen() {
                         modifier = Modifier
                             .weight(6f),
                         text = "My movies",
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Medium
                     )
 
                     IconButton(
@@ -124,15 +127,15 @@ fun UserScreen() {
                 if (expandedState) {
                     Text(
                         text = "Barbie \nTransformers \nOpenhaimer",
-                        fontSize = 19.sp,
+                        fontSize = 15.sp,
                         fontWeight = FontWeight.Normal,
-                        lineHeight = 35.sp
+                        lineHeight = 33.sp
                     )
                 }
             }
         }
 
-        Spacer(modifier = Modifier.size(30.dp))
+        Spacer(modifier = Modifier.size(20.dp))
 
         Card(
             modifier = Modifier
@@ -163,8 +166,8 @@ fun UserScreen() {
                         modifier = Modifier
                             .weight(6f),
                         text = "My favorites",
-                        fontSize = 22.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Medium,
                         maxLines = 1,
                         overflow = TextOverflow.Ellipsis
                     )
@@ -187,15 +190,15 @@ fun UserScreen() {
                 if (expandedState2) {
                     Text(
                         text = "Barbie \nTransformers \nOpenhaimer",
-                        fontSize = 19.sp,
+                        fontSize = 15.sp,
                         fontWeight = FontWeight.Normal,
-                        lineHeight = 35.sp
+                        lineHeight = 33.sp
                     )
                 }
             }
         }
 
-        Spacer(modifier = Modifier.size(20.dp))
+        Spacer(modifier = Modifier.size(25.dp))
 
         Button(
             onClick = { /*TODO*/ },
@@ -205,7 +208,7 @@ fun UserScreen() {
             Text(
                 text = "My data",
                 color = Color.White,
-                fontSize = 18.sp
+                fontSize = 15.sp
             )
         }
 
@@ -219,7 +222,7 @@ fun UserScreen() {
             Text(
                 text = "Preferences",
                 color = Color.White,
-                fontSize = 18.sp
+                fontSize = 15.sp
             )
         }
     }

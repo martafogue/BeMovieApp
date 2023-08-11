@@ -44,6 +44,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
@@ -116,8 +117,8 @@ fun ShowMovieDetail(
                             .padding(10.dp,0.dp,0.dp,0.dp)
                             .weight(6f),
                         text = "Rating: ${movie.vote_average}",
-                        fontSize = 20.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp,
+                        //fontWeight = FontWeight.Medium,
                     )
                 }
             }
@@ -149,8 +150,8 @@ fun ShowMovieDetail(
                             .padding(10.dp,0.dp,0.dp,0.dp)
                             .weight(6f),
                         text = "Release date: ${movie.release_date}",
-                        fontSize = 20.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp,
+                        //fontWeight = FontWeight.Bold,
                     )
                 }
             }
@@ -184,8 +185,8 @@ fun ShowMovieDetail(
                         modifier = Modifier
                             .weight(6f),
                         text = "Overview",
-                        fontSize = 20.sp,
-                        fontWeight = FontWeight.Bold,
+                        fontSize = 16.sp,
+                        fontWeight = FontWeight.Medium
                     )
                     IconButton(
                         modifier = Modifier
@@ -204,8 +205,10 @@ fun ShowMovieDetail(
                 if (expandedState) {
                     Text(
                         text = movie.overview.toString(),
-                        fontSize = 20.sp,
-                    fontWeight = FontWeight.Normal
+                        fontSize = 14.sp,
+                        fontWeight = FontWeight.Normal,
+                        textAlign = TextAlign.Justify,
+                        lineHeight = 22.sp
                     )
                 }
             }

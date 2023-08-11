@@ -109,7 +109,7 @@ fun MovieItem(
                     Text(
                         text = movie.title,
                         style = MaterialTheme.typography.labelLarge,
-                        fontSize = 16.sp,
+                        fontSize = 13.sp,
                         color = Color.White,
                         textAlign = TextAlign.Center,
                         lineHeight = 14.sp,

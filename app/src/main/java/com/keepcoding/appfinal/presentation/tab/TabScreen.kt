@@ -45,10 +45,9 @@ fun TabScreen(
                         Text(
                             title,
                             color = androidx.compose.ui.graphics.Color.White,
-                            fontSize = 18.sp
+                            fontSize = 13.sp
                         ) },
                     selected = tabIndex == index,
-                    selectedContentColor = Color.Cyan,
                     onClick = { tabIndex = index },
                     icon = {
                         when (index) {
